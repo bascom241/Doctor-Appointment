@@ -7,7 +7,7 @@ export const DoctorContext = createContext(null);
 
 const DoctorContextProvider = (props)=>{
 const [list,setList] = useState([]);
-const url = "http://localhost:8000";
+const url = "https://doctor-appointment-u77e.onrender.com";
 const [appointment,setAppointment] = useState([]);
 const [userId,setUserId] = useState(localStorage.getItem("userId"));
 const [token,setToken] = useState(localStorage.getItem("token"));
