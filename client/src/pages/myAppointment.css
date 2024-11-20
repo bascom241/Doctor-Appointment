@@ -1,0 +1,118 @@
+.appointment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    padding: 30px 15px;
+    /* border-radius: 15px; */
+    /* margin-right: 20px;
+    margin-left: 20px; */
+   margin: 40px;
+   
+}
+
+.appointment-ultimate-container{
+    padding-top: 8rem ;
+    color: rgb(15, 42, 83);
+}
+.appointment-ultimate-container h2{
+    text-align: center;
+}
+
+.appoint-description{
+   display: grid;
+   grid-template-columns: 2fr 2fr 4fr;
+   place-items: center;
+   place-content: center;
+   gap: 4rem;
+}
+
+.appoint-description div img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.appoint-description div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proceed{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.proceed a{
+    border: 2px solid rgb(15, 42, 83);
+    color: rgb(15, 42, 83);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.proceed a:hover{
+    background-color: rgb(15, 42, 83);
+    color: white;
+}
+
+.remove button{
+    background-color: rgb(123, 15, 15);
+    padding: 10px 25px;
+    color: white;
+    border: 2px solid rgb(123, 15, 15);
+    transition: all 0.3s ease;
+}
+.remove button:hover{
+    background-color:rgb(123, 15, 15,0.4) ;
+}
+.empty-apointment{
+   text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .appointment-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .appoint-description {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 0.2rem;
+    }
+
+    .appoint-description div img {
+        width: 100%;
+        /* height: 150px; */
+    }
+
+    .appoint-description div:nth-child(2) {
+        align-items: flex-start; /* Align details to the left */
+        padding: 10px;
+    }
+
+    .proceed {
+        flex-direction: column; /* Stack buttons vertically */
+        /* gap: 10px; */
+    }
+    .bookk{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .proceed a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .remove button {
+        padding: 8px 15px;
+        margin: 20px 0px;
+    }
+}

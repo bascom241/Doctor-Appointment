@@ -1,0 +1,159 @@
+.nav-contaner nav{
+    background-color:#fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+  
+}
+
+.nav-contaner nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-contaner nav ul a{
+    color: black;
+    position: relative;
+}
+
+.nav-contaner nav ul a.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(22, 205, 233,0.7);
+    bottom: -6px;
+    height: 3px;
+    
+}
+
+
+
+
+
+
+.userProfile{
+position: relative;
+}
+.tooltip{
+top: 70px;
+right: 10px;
+position: absolute;
+padding: 20px;
+background: rgb(15, 42, 83);
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.7s ease;
+width: 190px;
+height: 140px;
+
+
+}
+.tooltip.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip div a{
+    color: white;
+}
+
+.tooltip div a:hover{
+    color: green;
+}
+.tooltip{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tooltip div{
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+
+
+
+.nav-contaner nav img{
+    width: 50px;
+
+}
+
+.open-nav-name{
+    display: none;
+}
+.close-icon{
+    display: none;
+}
+@media (max-width: 768px) {
+    .navlink-contaner{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background: rgb(15, 42, 83);
+        width: 250px;
+        height: 100%;
+        z-index: 999;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-contaner nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .userProfile{
+        display: inline;
+    }
+    .user-profile-con{
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-contaner nav ul a.active::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: rgb(22, 205, 233,0.7);
+        bottom: -6px;
+        height: 3px;
+        width: 100%;
+        
+    }
+    .navlink-contaner a{
+        padding-top: 20px;
+        font-size: 20px;
+       
+        gap: 10px;
+        flex-direction: row;
+    }
+    .nav-contaner nav ul a{
+        color: white;
+     
+    }
+    .close-icon{
+        /* padding-top: 20px; */
+        font-size: 20px;
+        color: white;
+    }
+    .open-nav-name{
+        display: block;
+    }
+    .close-icon{
+        display: block;
+    }
+}

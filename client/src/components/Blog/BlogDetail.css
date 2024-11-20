@@ -1,0 +1,21 @@
+.blogDetailContainer{
+    padding: 8rem 1rem 2rem 2rem;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.blogDetailContainer p{
+    letter-spacing: 1px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .blogDetailContainer img{
+        width: 100%;
+    }
+    .blogDetailContainer h2{
+       text-align: center;
+    }
+}

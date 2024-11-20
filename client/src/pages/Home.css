@@ -1,0 +1,271 @@
+.home-container div .img {
+    margin-top: 7rem;
+    width: 100%;
+  
+
+}
+
+.home-container {
+    max-width: 90%;
+    margin: auto;
+
+}
+
+.specialist-container{
+    display: flex;
+    gap: 20px;
+    /* width: 80%; */
+    padding: 0px 70px;
+    
+}
+
+
+
+.specialist-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(86, 181, 192, 0.7);
+    border: 20px solid rgb(223, 232, 234);
+  
+}
+
+.specialist-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease;
+    align-items: center;
+   
+}
+.specialist-card:hover{
+    transform: scale(1.1);
+}
+
+.special-section{
+    text-align: center;
+
+}
+
+
+.special-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.special-text h2{
+    margin-top: 4rem;
+}
+.special-text p{
+    margin-bottom: 2rem;
+}
+.bannerText{
+    position: relative;
+
+}
+.bannerText img{
+    width: 100%;
+    margin: 0;
+}
+
+
+.bannerText div{
+    position:absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+
+.bannerText div a{
+    padding: 15px;
+    border: 1px solid white;
+    width: 30%;
+    color: black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.bannerText div a:hover{
+    background-color: white;
+    
+}
+
+
+.offers{
+    display: flex;
+    justify-content: space-around;
+
+}
+.offer-container{
+    margin-top: 3rem;
+    width: 100%;
+  
+}
+
+.offer-container h1{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.offers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   
+}
+.offers div .icon{
+    font-size: 2.5rem;
+    color:rgb(22, 205, 233,0.7);
+}
+
+
+
+.ban-sub-container img{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+
+.ban-sub-container{
+    position: relative;
+}
+.ban-sub-container div{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 20px;
+    left: 30%;
+}
+
+.ban-sub-container div form input{
+    padding: 10px 20px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.ban-sub-container div form button{
+    background: linear-gradient(white,rgb(7, 126, 158));
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(171, 174, 174);
+    color: white;
+    transition: border-radius 0.3s ease ;
+    width: 150px;
+}
+
+
+.ban-sub-container div form button:hover{
+  border-radius: 0px;
+}
+
+
+@media (max-width: 768px) {
+   
+    .offers{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ban-sub-container img{
+        margin-top: 5rem;
+        width: 1100px;
+    }
+
+    .home-container div .img {
+        margin-top: 7rem;
+        width: 600px;
+    
+
+    
+    }
+    
+
+    .ban-sub-container div{
+        position: absolute;
+        top: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       text-align: center;
+        font-size: 1.3rem;
+        gap: 20px;
+        left: 5%;
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+   .wrapP p{
+    font-size: 1rem;
+   }
+ 
+   .bannerText img{
+    width: 600px;
+ padding: 3rem 0rem;
+    height: 600px;
+}
+
+.bannerText div{
+    position:absolute;
+    top: 15%;
+  
+}
+
+.bannerText div a{
+   width: 90%;
+}
+.ban-sub-container div form input{
+ 
+    width: 70%;
+    
+}
+.offer-container{
+    margin-top: 1rem;
+    width: 100%;
+  
+}
+.offers div p{
+    text-align: center;
+}
+
+.specialist-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+
+    gap: 20px;
+    /* width: 80%; */
+    padding: 0px 5px;
+    
+}
+
+}
+
+@media (min-width: 768px )and  (max-width:1100px) {
+    .wrapP p{
+        font-size: 1rem;
+       }
+       .ban-sub-container img{
+        margin-top: 5rem;
+        width: 1100px;
+    }
+}

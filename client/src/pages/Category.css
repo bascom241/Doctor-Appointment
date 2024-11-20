@@ -1,0 +1,125 @@
+.category-container{
+padding: 8rem 4rem 4rem 4rem ;
+display: grid;
+grid-template-columns: 2fr 4fr ;
+
+}
+
+.cat-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+
+}
+.cat-list a{
+    color: black;
+    border: 1px solid black;
+    padding:10px 5px;
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.cat-list a:hover{
+    background-color: rgb(7, 126, 158);
+    color: white;
+}
+
+.doc-Con a{
+color: black;
+padding: 0px 20px;
+}
+
+.doc-Con {
+   border: 1px solid black;
+   padding: 10px 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.doc-Con img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+.doc-sper-con{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .category-container{
+        padding:1rem ;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr ;
+        
+        }
+    .doc-sper-con{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .doc-Con img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    
+    }
+    .doc-Con a{
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        place-items: center;
+        gap: 10px;
+    }
+
+ 
+    .cat-list a{
+   
+        width: 100%;
+        padding:10px 20px;
+    }
+    .cat-list{
+      padding-top: 8rem;
+     display: flex;
+     margin: auto;
+    
+    }
+
+}
+
+
+@media (min-width: 768px )and  (max-width:1100px) {
+        
+    .cat-list a{
+   
+        width: 100%;
+        padding:10px 20px;
+    }
+    .cat-list{
+      padding-top: 8rem;
+     display: flex;
+     /* margin: auto; */
+     margin-bottom: 2rem;
+    
+    }
+    .category-container{
+        padding:1rem ;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr ;
+        
+        }
+    .doc-sper-con{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    }

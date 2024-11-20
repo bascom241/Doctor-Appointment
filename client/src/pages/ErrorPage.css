@@ -1,0 +1,21 @@
+.error{
+    display: grid;
+    place-items: center;
+    margin-top: 12rem;
+    gap: 10px;
+    color: rgb(10, 10, 56);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.error a{
+     background-color: rgb(10, 10, 56);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 2px solid rgb(10, 10, 56);
+    transition: all 0.3s ease;
+}
+.error a:hover{
+    background-color: white;
+    color: rgb(10, 10, 56);
+}

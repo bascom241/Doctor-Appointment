@@ -1,0 +1,74 @@
+.footer {
+    /* background-color: #282c34; */
+    background: rgb(15, 42, 83,0.9);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start */
+    flex-wrap: wrap;
+  }
+  
+  .footer-links {
+    margin: 10px 20px;
+    flex: 1; /* Distribute links evenly */
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0; /* Smaller margin for links */
+    display: block; /* Make links block elements for easier clicking */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .footer-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: #61dafb; /* Change to your preferred hover color */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center; /* Center items */
+    }
+  
+    .footer-links {
+      margin-bottom: 15px;
+      text-align: center; /* Center text for smaller screens */
+    }
+  
+    .footer-icons {
+      justify-content: center;
+    }
+  }
+  

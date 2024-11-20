@@ -1,0 +1,43 @@
+.doctor-card{
+
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.261);
+    /* width: 300px;
+    height: 300px; */
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    transition: all 0.3s ease;
+
+}
+.doctor-card img{
+    /* background: blue; */
+ 
+    width:100%;
+    height: auto;
+}
+.doctor-card:hover{
+    transform: scale(1.1);
+}
+
+.doctor-card-container{
+   padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.doctor-card a{
+color: black;
+}
+@media (max-width: 768px) {
+    .doctor-card-container{
+        padding: 1rem 0.5rem;
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         gap: 40px;
+     }
+}
